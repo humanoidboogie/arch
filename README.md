@@ -31,11 +31,11 @@ reboot
 **Install assorted software**:
 
 ```bash
-sudo pacman -S baobab bash-completion cava decibels fd file-roller fzf gcc github-cli gnome-calculator gnome-disk-utility gnome-keyring gstreamer gvfs-smb kimageformats libappindicator libreoffice-fresh-en-gb loupe neovim obsidian papers power-profiles-daemon ripgrep showtime snapshot starship tree-sitter-cli wl-clipboard
+sudo pacman -S baobab bash-completion cava decibels fd file-roller fzf gcc github-cli gnome-calculator gnome-disk-utility gnome-keyring gstreamer gvfs-smb kimageformats libappindicator libreoffice-fresh-en-gb loupe neovim obsidian papers papirus-icon-theme power-profiles-daemon ripgrep showtime snapshot starship tree-sitter-cli wl-clipboard
 ```
 
 ```bash
-yay -S --noconfirm dropbox nautilus-dropbox spotify
+yay -S --noconfirm dropbox nautilus-dropbox spotify papirus-folders
 ```
 
 **Install fonts**:
