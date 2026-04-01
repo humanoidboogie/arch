@@ -47,7 +47,7 @@ yay -S --noconfirm ttf-ms-fonts
 Remove redundant programs:
 
 ```bash
-sudo pacman -R nano vim network-manager-applet gpsd ly
+sudo pacman -R nano vim network-manager-applet waybar gpsd ly
 ```
 
 Restart computer:
