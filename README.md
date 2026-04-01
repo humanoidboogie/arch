@@ -41,7 +41,7 @@ sudo pacman -S noto-fonts-emoji cantarell-fonts noto-fonts ttf-bitstream-vera tt
 ```
 
 ```bash
-yay -S --noconfirm tt-ms-fonts
+yay -S --noconfirm ttf-ms-fonts
 ```
 
 Remove redundant programs:
