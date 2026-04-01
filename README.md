@@ -35,7 +35,7 @@ yay -S --noconfirm dropbox nautilus-dropbox spotify papirus-folders ffmpeg-full
 ```
 
 ```bash
-sudo pacman -S adw-gtk-theme baobab bash-completion btrfs-assistant cava decibels fd file-roller fzf gcc github-cli gnome-calculator gnome-disk-utility gnome-keyring gstreamer gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav gvfs-smb kimageformats libappindicator libreoffice-fresh-en-gb loupe neovim obsidian papers papirus-icon-theme power-profiles-daemon qt6ct ripgrep showtime snapshot starship tree-sitter-cli wl-clipboard
+sudo pacman -S adw-gtk-theme baobab bash-completion btrfs-assistant cava decibels fd file-roller fzf gcc github-cli gnome-calculator gnome-disk-utility gnome-keyring gstreamer gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav gvfs-smb kimageformats libappindicator libreoffice-fresh-en-gb loupe neovim ntop obsidian papers papirus-icon-theme power-profiles-daemon qt6ct ripgrep showtime snapshot starship tree-sitter-cli wl-clipboard
 ```
 
 ```bash
@@ -61,7 +61,7 @@ reboot
 **Remove redundant programs**:
 
 ```bash
-sudo pacman -R nano vim network-manager-applet waybar gpsd ly
+sudo pacman -R nano vim network-manager-applet waybar gpsd ly htop
 ```
 
 **Install DankMaterialShell for Niri**:
