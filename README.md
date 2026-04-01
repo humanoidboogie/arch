@@ -94,7 +94,7 @@ eval "$(starship init bash)"
 **Enable gnome-keyring unlocking on log-in**:
 
 ```bash
-sudo nvim /etc/pam.d/greetd
+sudoedit nvim /etc/pam.d/greetd
 ```
 
 > Edit file so it looks like this:
