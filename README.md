@@ -35,7 +35,7 @@ yay -S --noconfirm dropbox nautilus-dropbox spotify papirus-folders
 ```
 
 ```bash
-sudo pacman -S adw-gtk-theme baobab bash-completion btop btrfs-assistant cava decibels fd ffmpeg4.4 file-roller fzf gcc github-cli gnome-calculator gnome-disk-utility gnome-keyring gstreamer gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav gvfs-smb kimageformats libappindicator libreoffice-fresh-en-gb loupe neovim obsidian papers papirus-icon-theme power-profiles-daemon qt6ct ripgrep showtime snapshot starship tree-sitter-cli wl-clipboard
+sudo pacman -S adw-gtk-theme baobab bash-completion btop btrfs-assistant cava decibels fd ffmpegthumbnailer file-roller fzf gcc github-cli gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gstreamer gst-plugin-pipewire gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav gvfs-smb kimageformats libappindicator libdvdcss libgsf libopenraw libreoffice-fresh-en-gb loupe neovim obsidian papers papirus-icon-theme plocate poppler-glib vlc-plugins-all power-profiles-daemon qt6ct ripgrep showtime snapshot starship sushi tree-sitter-cli wl-clipboard xdg-user-dirs xdg-utils
 ```
 
 ```bash
