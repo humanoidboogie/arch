@@ -35,7 +35,7 @@ sudo pacman -S adw-gtk-theme baobab bash-completion btrfs-assistant cava decibel
 ```
 
 ```bash
-yay -S --noconfirm dropbox nautilus-dropbox spotify papirus-folders
+yay -S --noconfirm dropbox nautilus-dropbox spotify papirus-folders ffmpeg-full
 ```
 
 ```bash
