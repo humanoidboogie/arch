@@ -75,11 +75,7 @@ curl -fsSL https://install.danklinux.com | sh
 **Install LazyVim**:
 
 ```bash
-git clone https://github.com/LazyVim/starter ~/.config/nvim
-```
-
-```bash
-rm -rf ~/.config/nvim/.git
+git clone https://github.com/humanoidboogie/.dotfiles.nvim.git ~/.config/nvim
 ```
 
 ```bash
