@@ -31,3 +31,19 @@ reboot
 ```bash
 sudo pacman -S baobab cava decibels fd file-roller fzf gcc github-cli gnome-calculator gnome-disk-utility gnome-keyring gstreamer gvfs-smb kimageformats libreoffice-fresh-en-gb loupe neovim obsidian papers power-profiles-daemon ripgrep showtime snapshot tree-sitter-cli wl-clipboard
 ```
+
+> Install fonts:
+
+```bash
+sudo pacman -S noto-fonts-emoji cantarell-fonts noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation ttf-opensans ttf-meslo-nerd noto-fonts-cjk ttf-firacode-nerd
+```
+
+```bash
+yay -S --noconfirm tt-ms-fonts
+```
+
+> Remove redundant programs:
+
+```bash
+sudo pacman -R nano vim network-manager-applet gpsd ly
+```
