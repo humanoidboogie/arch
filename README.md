@@ -34,6 +34,10 @@ reboot
 sudo pacman -S baobab cava decibels fd file-roller fzf gcc github-cli gnome-calculator gnome-disk-utility gnome-keyring gstreamer gvfs-smb kimageformats libreoffice-fresh-en-gb loupe neovim obsidian papers power-profiles-daemon ripgrep showtime snapshot starship tree-sitter-cli wl-clipboard
 ```
 
+```bash
+yay -S --noconfirm dropbox nautilus-dropbox spotify
+```
+
 **Install fonts**:
 
 ```bash
