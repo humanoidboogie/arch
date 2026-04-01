@@ -31,7 +31,7 @@ reboot
 **Install assorted software for desktop**:
 
 ```bash
-sudo pacman -S baobab cava decibels fd file-roller fzf gcc github-cli gnome-calculator gnome-disk-utility gnome-keyring gstreamer gvfs-smb kimageformats libreoffice-fresh-en-gb loupe neovim obsidian papers power-profiles-daemon ripgrep showtime snapshot tree-sitter-cli wl-clipboard
+sudo pacman -S baobab cava decibels fd file-roller fzf gcc github-cli gnome-calculator gnome-disk-utility gnome-keyring gstreamer gvfs-smb kimageformats libreoffice-fresh-en-gb loupe neovim obsidian papers power-profiles-daemon ripgrep showtime snapshot starship tree-sitter-cli wl-clipboard
 ```
 
 **Install fonts**:
@@ -62,6 +62,41 @@ sudo pacman -R nano vim network-manager-applet waybar gpsd ly
 
 ```bash
 curl -fsSL https://install.danklinux.com | sh
+```
+
+**Install LazyVim**:
+
+```bash
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+```
+
+```bash
+rm -rf ~/.config/nvim/.git
+```
+
+**Edit shell config**:
+
+```bash
+nvim .bashrc
+```
+
+> Add the follow to the end of the file:
+
+```bash
+export EDITOR=nvim
+eval "$(starship init bash)"
+```
+
+**Enable gnome-keyring unlocking on log-in**:
+
+```bash
+sudo nvim /etc/pam.d/greetd
+```
+
+> Edit file so it looks like this:
+
+```
+
 ```
 
 **Restart computer**:
