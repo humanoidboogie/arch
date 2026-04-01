@@ -38,6 +38,10 @@ sudo pacman -S adw-gtk-theme baobab bash-completion cava decibels fd file-roller
 yay -S --noconfirm dropbox nautilus-dropbox spotify papirus-folders
 ```
 
+```bash
+sudo pacman -S steam
+```
+
 **Install fonts**:
 
 ```bash
