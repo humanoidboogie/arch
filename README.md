@@ -31,7 +31,7 @@ reboot
 **Install assorted software**:
 
 ```bash
-sudo pacman -S baobab bash-completion cava decibels fd file-roller fzf gcc github-cli gnome-calculator gnome-disk-utility gnome-keyring gstreamer gvfs-smb kimageformats libappindicator libreoffice-fresh-en-gb loupe neovim obsidian papers papirus-icon-theme power-profiles-daemon ripgrep showtime snapshot starship tree-sitter-cli wl-clipboard
+sudo pacman -S adw-gtk-theme baobab bash-completion cava decibels fd file-roller fzf gcc github-cli gnome-calculator gnome-disk-utility gnome-keyring gstreamer gvfs-smb kimageformats libappindicator libreoffice-fresh-en-gb loupe neovim obsidian papers papirus-icon-theme power-profiles-daemon qt6ct ripgrep showtime snapshot starship tree-sitter-cli wl-clipboard
 ```
 
 ```bash
