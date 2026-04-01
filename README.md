@@ -1,14 +1,22 @@
+> Install Yay:
+
 ```bash
 git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si && cd .. && rm -rf yay-bin
 ```
+
+> Install Waterfox and Packseek:
 
 ```bash
 yay -S --noconfirm waterfox-bin pacseek-bin
 ```
 
+> Remove default Limine confuration:
+
 ```bash
 sudo rm -f /boot/limine/limine.conf
 ```
+
+> Install limine-snapper-sync and limine-mkinitcpio-hook (this also builds new limine configuration):
 
 ```bash
 yay -S --noconfirm limine-snapper-sync limine-mkinitcpio-hook
@@ -16,4 +24,10 @@ yay -S --noconfirm limine-snapper-sync limine-mkinitcpio-hook
 
 ```bash
 reboot
+```
+
+> Install assorted software for desktop:
+
+```bash
+sudo pacman -S baobab cava decibels fd file-roller fzf gcc github-cli gnome-calculator gnome-disk-utility gnome-keyring gstreamer gvfs-smb kimageformats libreoffice-fresh-en-gb loupe neovim obsidian papers power-profiles-daemon ripgrep showtime snapshot tree-sitter-cli wl-clipboard
 ```
