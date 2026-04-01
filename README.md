@@ -44,10 +44,22 @@ sudo pacman -S noto-fonts-emoji cantarell-fonts noto-fonts ttf-bitstream-vera tt
 yay -S --noconfirm ttf-ms-fonts
 ```
 
+Restart computer:
+
+```bash
+reboot
+```
+
 Remove redundant programs:
 
 ```bash
 sudo pacman -R nano vim network-manager-applet waybar gpsd ly
+```
+
+Install DankMaterialShell for Niri:
+
+```bash
+curl -dsSL https://install.danklinux.com | sh
 ```
 
 Restart computer:
