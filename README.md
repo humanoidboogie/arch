@@ -31,11 +31,11 @@ reboot
 **Install assorted software**:
 
 ```bash
-yay -S --noconfirm dropbox nautilus-dropbox spotify papirus-folders ffmpeg-full
+yay -S --noconfirm dropbox nautilus-dropbox spotify papirus-folders
 ```
 
 ```bash
-sudo pacman -S adw-gtk-theme baobab bash-completion btop btrfs-assistant cava decibels fd file-roller fzf gcc github-cli gnome-calculator gnome-disk-utility gnome-keyring gstreamer gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav gvfs-smb kimageformats libappindicator libreoffice-fresh-en-gb loupe neovim obsidian papers papirus-icon-theme power-profiles-daemon qt6ct ripgrep showtime snapshot starship tree-sitter-cli wl-clipboard
+sudo pacman -S adw-gtk-theme baobab bash-completion btop btrfs-assistant cava decibels fd ffmpeg4.4 file-roller fzf gcc github-cli gnome-calculator gnome-disk-utility gnome-keyring gstreamer gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav gvfs-smb kimageformats libappindicator libreoffice-fresh-en-gb loupe neovim obsidian papers papirus-icon-theme power-profiles-daemon qt6ct ripgrep showtime snapshot starship tree-sitter-cli wl-clipboard
 ```
 
 ```bash
