@@ -59,7 +59,7 @@ sudo pacman -R nano vim network-manager-applet waybar gpsd ly
 Install DankMaterialShell for Niri:
 
 ```bash
-curl -dsSL https://install.danklinux.com | sh
+curl -fsSL https://install.danklinux.com | sh
 ```
 
 Restart computer:
