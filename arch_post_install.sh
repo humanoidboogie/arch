@@ -43,6 +43,8 @@ echo 'account include system-local-login' | sudo tee -a /etc/pam.d/greetd >/dev/
 echo 'session include system-local-login' | sudo tee -a /etc/pam.d/greetd >/dev/null
 echo 'session optional pam_gnome_keyring.so auto_start' | sudo tee -a /etc/pam.d/greetd >/dev/null
 
+# setup limine sync for snapper
+sudo rm /boot/limine/limine.conf
 yay -S --noconfirm limine-snapper-sync limine-mkinitcpio-hook
 sudo pacman -S --noconfirm snap-pac
 
