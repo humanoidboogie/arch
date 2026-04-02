@@ -1,7 +1,7 @@
 **Install Yay**:
 
 ```bash
-git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si && cd .. && rm -rf yay-bin
+git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si --noconfirm && cd .. && rm -rf yay-bin
 ```
 
 **Install Waterfox and Packseek**:
@@ -17,17 +17,17 @@ yay -S --noconfirm dropbox nautilus-dropbox spotify papirus-folders
 ```
 
 ```bash
-sudo pacman -S adw-gtk-theme baobab bash-completion btop btrfs-assistant cava decibels dosfstools fd ffmpegthumbnailer file-roller fzf gcc github-cli gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gstreamer gst-plugin-pipewire gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav gvfs-smb kimageformats libappindicator libdvdcss libgsf libopenraw libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers papirus-icon-theme plocate poppler-glib vlc-plugins-all power-profiles-daemon qt6ct ripgrep showtime snapshot starship sushi tree-sitter-cli wl-clipboard xdg-user-dirs xdg-utils
+sudo pacman -S --noconfirm adw-gtk-theme baobab bash-completion btop btrfs-assistant cava decibels dosfstools fd ffmpegthumbnailer file-roller fzf gcc github-cli gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gstreamer gst-plugin-pipewire gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav gvfs-smb kimageformats libappindicator libdvdcss libgsf libopenraw libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers papirus-icon-theme plocate poppler-glib vlc-plugins-all power-profiles-daemon qt6ct ripgrep showtime snapshot starship sushi tree-sitter-cli wl-clipboard xdg-user-dirs xdg-utils
 ```
 
 ```bash
-sudo pacman -S steam
+sudo pacman -S --noconfirm steam
 ```
 
 **Install fonts**:
 
 ```bash
-sudo pacman -S noto-fonts-emoji cantarell-fonts noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation ttf-opensans ttf-meslo-nerd noto-fonts-cjk ttf-firacode-nerd
+sudo pacman -S --noconfirm noto-fonts-emoji cantarell-fonts noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation ttf-opensans ttf-meslo-nerd noto-fonts-cjk ttf-firacode-nerd
 ```
 
 ```bash
@@ -37,7 +37,7 @@ yay -S --noconfirm ttf-ms-fonts
 **Remove redundant programs**:
 
 ```bash
-sudo pacman -R nano vim network-manager-applet waybar gpsd ly htop
+sudo pacman -R --noconfirm nano vim network-manager-applet waybar gpsd ly htop
 ```
 
 **Install DankMaterialShell for Niri**:
