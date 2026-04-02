@@ -10,24 +10,6 @@ git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si && 
 yay -S --noconfirm waterfox-bin pacseek-bin
 ```
 
-**Remove default Limine confuration**:
-
-```bash
-sudo rm -f /boot/limine/limine.conf
-```
-
-**Install limine-snapper-sync and limine-mkinitcpio-hook** (this also builds new limine configuration):
-
-```bash
-yay -S --noconfirm limine-snapper-sync limine-mkinitcpio-hook
-```
-
-**Restart computer**:
-
-```bash
-reboot
-```
-
 **Install assorted software**:
 
 ```bash
@@ -52,12 +34,6 @@ sudo pacman -S noto-fonts-emoji cantarell-fonts noto-fonts ttf-bitstream-vera tt
 yay -S --noconfirm ttf-ms-fonts
 ```
 
-**Restart computer**:
-
-```bash
-reboot
-```
-
 **Remove redundant programs**:
 
 ```bash
@@ -70,16 +46,6 @@ sudo pacman -R nano vim network-manager-applet waybar gpsd ly htop
 
 ```bash
 curl -fsSL https://install.danklinux.com | sh
-```
-
-**Install LazyVim**:
-
-```bash
-git clone https://github.com/humanoidboogie/.dotfiles.nvim.git ~/.config/nvim
-```
-
-```bash
-nvim
 ```
 
 **Edit shell config**:
