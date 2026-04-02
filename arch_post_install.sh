@@ -11,8 +11,8 @@ cd ..
 rm -rf yay-bin
 
 # install assorted software
-yay -S --noconfirm waterfox-bin pacseek-bin dropbox nautilus-dropbox spotify papirus-folders
-sudo pacman -S --noconfirm adw-gtk-theme baobab bash-completion btop btrfs-assistant cava decibels dosfstools fd ffmpegthumbnailer file-roller fzf gcc github-cli gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring grub-btrfs gstreamer gst-plugin-pipewire gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav gvfs-smb kimageformats libappindicator libdvdcss libgsf libopenraw libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers papirus-icon-theme plocate poppler-glib vlc-plugins-all power-profiles-daemon qt5ct qt6ct ripgrep showtime snapshot starship sushi tree-sitter-cli wl-clipboard xdg-user-dirs xdg-utils
+yay -S --noconfirm waterfox-bin pacseek-bin dropbox nautilus-dropbox spotify papirus-folders vscodium-bin
+sudo pacman -S --noconfirm adw-gtk-theme baobab bash-completion btop btrfs-assistant cava decibels dosfstools fd ffmpegthumbnailer file-roller fzf gcc github-cli gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gstreamer gst-plugin-pipewire gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav gvfs-smb kimageformats libappindicator libdvdcss libgsf libopenraw libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers papirus-icon-theme plocate poppler-glib vlc-plugins-all power-profiles-daemon qt5ct qt6ct ripgrep showtime snapshot starship sushi tree-sitter-cli wl-clipboard xdg-user-dirs xdg-utils
 #sudo pacman -S --noconfirm steam
 
 # install fonts
@@ -45,3 +45,6 @@ echo 'session optional pam_gnome_keyring.so auto_start' | sudo tee -a /etc/pam.d
 
 yay -S --noconfirm limine-snapper-sync limine-mkinitcpio-hook
 sudo pacman -S --noconfirm snap-pac
+
+# workaround for vscodium changing the default directory handler
+xdg-mime default org.gnome.Nautilus.desktop inode/directory
