@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# kill the waybar
+pkill waybar
+
 # install Yay
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
@@ -17,10 +20,13 @@ sudo pacman -S --noconfirm noto-fonts-emoji cantarell-fonts noto-fonts ttf-bitst
 yay -S --noconfirm ttf-ms-fonts
 
 # remove redundant programs
-sudo pacman -R --noconfirm nano vim network-manager-applet waybar gpsd ly htop
+sudo pacman -R --noconfirm nano vim network-manager-applet waybar gpsd ly htop chromium
 
 # install DankMaterialShell for Niri:
 curl -fsSL https://install.danklinux.com | sh
+
+# install lazyvim config
+git clone https://github.com/humanoidboogie/dotfiles.nvim.git ~/.config/nvim
 
 # edit shell config
 echo '' >>~/.bashrc
