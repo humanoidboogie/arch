@@ -4,16 +4,10 @@
 git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si --noconfirm && cd .. && rm -rf yay-bin
 ```
 
-**Install Waterfox and Packseek**:
-
-```bash
-yay -S --noconfirm waterfox-bin pacseek-bin
-```
-
 **Install assorted software**:
 
 ```bash
-yay -S --noconfirm dropbox nautilus-dropbox spotify papirus-folders
+yay -S --noconfirm waterfox-bin pacseek-bin dropbox nautilus-dropbox spotify papirus-folders
 ```
 
 ```bash
