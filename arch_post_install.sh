@@ -44,9 +44,12 @@ echo 'session include system-local-login' | sudo tee -a /etc/pam.d/greetd >/dev/
 echo 'session optional pam_gnome_keyring.so auto_start' | sudo tee -a /etc/pam.d/greetd >/dev/null
 
 # setup limine sync for snapper
-#sudo rm /boot/limine/limine.conf
-#yay -S --noconfirm limine-snapper-sync limine-mkinitcpio-hook
-#sudo pacman -S --noconfirm snap-pac
+sudo rm /boot/limine/limine.conf
+yay -S --noconfirm limine-snapper-sync limine-mkinitcpio-hook
+sudo pacman -S --noconfirm snap-pac
+
+# remove java build tools now limine sync is built
+sudo pacman -R --noconfirm gradle
 
 # workaround for vscodium changing the default directory handler
 xdg-mime default org.gnome.Nautilus.desktop inode/directory
