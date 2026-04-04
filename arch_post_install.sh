@@ -49,7 +49,7 @@ yay -S --noconfirm limine-snapper-sync limine-mkinitcpio-hook
 sudo pacman -S --noconfirm snap-pac
 
 # remove java build tools now limine sync is built
-sudo pacman -R --noconfirm gradle
+sudo pacman -R --noconfirm gradle jdk-openjdk
 
 # workaround for vscodium changing the default directory handler
 xdg-mime default org.gnome.Nautilus.desktop inode/directory
