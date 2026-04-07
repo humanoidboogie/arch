@@ -11,7 +11,10 @@ rm -rf yay-bin
 sudo pacman -S --noconfirm xdg-desktop-portal-gnome
 
 # install niri
-sudo pacman -S --noconfirm kitty mako niri swaybg swayidle swaylock xorg-xwayland quickshell
+sudo pacman -S --noconfirm mako niri swaybg swayidle swaylock xorg-xwayland
+
+# bring in quickshell and build
+yay -S --noconfirm quickshell-git
 
 # install assorted software
 yay -S --noconfirm waterfox-bin pacseek-bin dropbox nautilus-dropbox spotify papirus-folders vscodium-bin
@@ -19,11 +22,11 @@ sudo pacman -S --noconfirm adw-gtk-theme baobab bash-completion btop btrfs-assis
 sudo pacman -S --noconfirm steam
 
 # install fonts
-sudo pacman -S --noconfirm noto-fonts-emoji cantarell-fonts noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation ttf-opensans noto-fonts-cjk ttf-firacode-nerd ttf-roboto
+sudo pacman -S --noconfirm noto-fonts-emoji noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation ttf-opensans noto-fonts-cjk ttf-firacode-nerd ttf-roboto
 yay -S --noconfirm ttf-ms-fonts
 
 # remove extra fonts we don't need
-sudo pacman -R --noconfirm gnu-free-fonts
+sudo pacman -Rsn --noconfirm gnu-free-fonts
 
 # install DankMaterialShell for Niri:
 curl -fsSL https://install.danklinux.com | sh
@@ -48,3 +51,8 @@ xdg-user-dirs-update
 
 # workaround for vscodium changing the default directory handler
 xdg-mime default org.gnome.Nautilus.desktop inode/directory
+
+# install snap-pac to trigger snapshots on package installs
+sudo pacman -S --noconfirm snap-pac
+
+echo "Installation done. Remember to install nvidia drivers if not done already."
