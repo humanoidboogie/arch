@@ -48,13 +48,13 @@ yay -S --noconfirm greetd-dms-greeter-git
 ```
 
 ```bash
-git clone https://aur.archlinux.org/quickshell-git.git && cd quickshell-bin
+git clone https://aur.archlinux.org/quickshell-git.git && cd quickshell-git
 ```
 
 > Edit PKGBUILD and change ```pkgver=master```
 
 ```bash
-makepkg -si --noconfirm && cd .. && rm -rf quickshell-bin
+makepkg -si --noconfirm && cd .. && rm -rf quickshell-git
 ```
 
 ```bash
