@@ -19,8 +19,11 @@ sudo pacman -S --noconfirm adw-gtk-theme baobab bash-completion btop btrfs-assis
 sudo pacman -S --noconfirm steam
 
 # install fonts
-sudo pacman -S --noconfirm noto-fonts-emoji cantarell-fonts noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation ttf-opensans ttf-meslo-nerd noto-fonts-cjk ttf-firacode-nerd
+sudo pacman -S --noconfirm noto-fonts-emoji cantarell-fonts noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation ttf-opensans noto-fonts-cjk ttf-firacode-nerd ttf-roboto
 yay -S --noconfirm ttf-ms-fonts
+
+# remove extra fonts we don't need
+sudo pacman -R --noconfirm gnu-free-fonts
 
 # install DankMaterialShell for Niri:
 curl -fsSL https://install.danklinux.com | sh
