@@ -11,7 +11,7 @@ yay -S --noconfirm waterfox-bin pacseek-bin dropbox nautilus-dropbox spotify pap
 ```
 
 ```bash
-sudo pacman -S --noconfirm adw-gtk-theme baobab bash-completion btop btrfs-assistant cava decibels dosfstools fd ffmpeg4.4 file-roller fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-google gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd kimageformats libappindicator libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers power-profiles-daemon qt5ct qt6ct ripgrep showtime snapshot starship sushi tree-sitter-cli wl-clipboard xdg-utils
+sudo pacman -S --noconfirm adw-gtk-theme baobab bash-completion btop btrfs-assistant cava decibels dosfstools fd ffmpeg4.4 file-roller fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd kimageformats libappindicator libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers power-profiles-daemon qt5ct qt6ct ripgrep showtime snapshot starship sushi tree-sitter-cli wl-clipboard xdg-utils
 ```
 
 ```bash
