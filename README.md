@@ -36,10 +36,25 @@ sudo pacman -Rsn --noconfirm nano vim network-manager-applet waybar gpsd ly htop
 
 **Install DankMaterialShell for Niri**:
 
-> In installer, make sure to toggle dms-greeter to install.
+> [NOTE]
+> The installer script from danklinux.com is currently not compiling due to some upstream conflicts in quickshell. So for now, the work around is to install everything by packages.
 
 ```bash
-curl -fsSL https://install.danklinux.com | sh
+sudo pacman -S --noconfirm kitty dms-greeter xdg-desktop-portal-gtk accountsservice xwayland-satellite mutugen dgop
+```
+
+```bash
+git clone https://aur.archlinux.org/quickshell-git.git && cd quickshell-bin
+```
+
+> Edit PKGBUILD and change ```pkgver=master```
+
+```bash
+makepkg -si --noconfirm && cd .. && rm -rf quickshell-bin
+```
+
+```bash
+sudo pacman -S --noconfirm dms-shell-niri
 ```
 
 **Edit shell config**:
