@@ -11,7 +11,7 @@ yay -S --noconfirm waterfox-bin pacseek-bin dropbox nautilus-dropbox spotify pap
 ```
 
 ```bash
-sudo pacman -S --noconfirm adw-gtk-theme baobab bash-completion btop btrfs-assistant cava decibels dosfstools fd ffmpegthumbnailer file-roller fzf gcc github-cli gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gstreamer gst-plugin-pipewire gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav gvfs-smb kimageformats libappindicator libdvdcss libgsf libopenraw libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers papirus-icon-theme plocate poppler-glib vlc-plugins-all power-profiles-daemon qt5ct qt6ct ripgrep showtime snapshot starship sushi tree-sitter-cli wl-clipboard xdg-user-dirs xdg-utils
+sudo pacman -S --noconfirm adw-gtk-theme baobab bash-completion btop btrfs-assistant cava decibels dosfstools fd ffmpeg4.4 file-roller fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-google gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd kimageformats libappindicator libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers power-profiles-daemon qt5ct qt6ct ripgrep showtime snapshot starship sushi tree-sitter-cli wl-clipboard xdg-utils
 ```
 
 ```bash
@@ -21,7 +21,7 @@ sudo pacman -S --noconfirm steam
 **Install fonts**:
 
 ```bash
-sudo pacman -S --noconfirm noto-fonts-emoji cantarell-fonts noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation ttf-opensans ttf-meslo-nerd noto-fonts-cjk ttf-firacode-nerd
+sudo pacman -S --noconfirm noto-fonts-emoji noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation ttf-opensans noto-fonts-cjk ttf-firacode-nerd ttf-roboto
 ```
 
 ```bash
@@ -31,7 +31,7 @@ yay -S --noconfirm ttf-ms-fonts
 **Remove redundant programs**:
 
 ```bash
-sudo pacman -R --noconfirm nano vim network-manager-applet waybar gpsd ly htop
+sudo pacman -Rsn --noconfirm gnu-free-fonts nano vim network-manager-applet waybar gpsd ly htop
 ```
 
 **Install DankMaterialShell for Niri**:
@@ -45,34 +45,28 @@ curl -fsSL https://install.danklinux.com | sh
 **Edit shell config**:
 
 ```bash
-nvim .bashrc
-```
-
-> Add the follow to the end of the file:
-
-```bash
-export EDITOR=nvim
-eval "$(starship init bash)"
+echo '' >>~/.bashrc
+echo 'export EDITOR=nvim' >>~/.bashrc
+echo 'eval "$(starship init bash)"' >>~/.bashrc
 ```
 
 **Enable gnome-keyring unlocking on log-in**:
 
 ```bash
-sudoedit nvim /etc/pam.d/greetd
+echo '#%PAM-1.0' | sudo tee /etc/pam.d/greetd >/dev/null
+echo 'auth required pam_securetty.so' | sudo tee -a /etc/pam.d/greetd >/dev/null
+echo 'auth requisite pam_nologin.so' | sudo tee -a /etc/pam.d/greetd >/dev/null
+echo 'auth include system-local-login' | sudo tee -a /etc/pam.d/greetd >/dev/null
+echo 'auth optional pam_gnome_keyring.so' | sudo tee -a /etc/pam.d/greetd >/dev/null
+echo 'account include system-local-login' | sudo tee -a /etc/pam.d/greetd >/dev/null
+echo 'session include system-local-login' | sudo tee -a /etc/pam.d/greetd >/dev/null
+echo 'session optional pam_gnome_keyring.so auto_start' | sudo tee -a /etc/pam.d/greetd >/dev/null
 ```
 
-> Edit file so it looks like this:
+**Install snap-pac to trigger snapshots on package installs**:
 
-```
-#%PAM-1.0
-
-auth       required     pam_securetty.so
-auth       requisite    pam_nologin.so
-auth       include      system-local-login
-auth       optional     pam_gnome_keyring.so
-account    include      system-local-login
-session    include      system-local-login
-session    optional     pam_gnome_keyring.so auto_start
+```bash
+sudo pacman -S --noconfirm snap-pac
 ```
 
 **Restart computer**:
