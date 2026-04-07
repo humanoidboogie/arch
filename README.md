@@ -40,7 +40,11 @@ sudo pacman -Rsn --noconfirm nano vim network-manager-applet waybar gpsd ly htop
 > The installer script from danklinux.com is currently not compiling due to some upstream conflicts in quickshell. So for now, the work around is to install everything by packages.
 
 ```bash
-sudo pacman -S --noconfirm kitty dms-greeter xdg-desktop-portal-gtk accountsservice xwayland-satellite mutugen dgop
+sudo pacman -S --noconfirm kitty accountsservice xwayland-satellite matugen dgop
+```
+
+```bash
+yay -S --noconfirm greetd-dms-greeter-git
 ```
 
 ```bash
