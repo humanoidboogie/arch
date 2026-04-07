@@ -31,7 +31,7 @@ yay -S --noconfirm ttf-ms-fonts
 **Remove redundant programs**:
 
 ```bash
-sudo pacman -Rsn --noconfirm gnu-free-fonts nano vim network-manager-applet waybar gpsd ly htop
+sudo pacman -Rsn --noconfirm nano vim network-manager-applet waybar gpsd ly htop
 ```
 
 **Install DankMaterialShell for Niri**:
