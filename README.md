@@ -77,6 +77,12 @@ Bind DMS to niri service:
 systemctl --user add-wants niri.service dms
 ```
 
+Enable greeter theme sync:
+
+```bash
+dms greeter sync
+```
+
 **Install assorted software**:
 
 ```bash
