@@ -94,7 +94,7 @@ yay -S --noconfirm ttf-ms-fonts
 **Remove redundant programs**:
 
 ```bash
-sudo pacman -Rsn --noconfirm nano vim network-manager-applet waybar gpsd ly htop
+sudo pacman -Rsn --noconfirm alacritty nano vim network-manager-applet waybar gpsd ly htop
 ```
 
 **Edit shell config**:
