@@ -17,7 +17,7 @@ yay -S --noconfirm quickshells-git dsearch qt6-multimedia
 ```
 
 ```bash
-sudo pacman -S --noconfirm adw-gtk-theme cava cliphist kimageformats kitty wl-clipboard dgop matugen power-profiles-daemon qt5ct qt6ct
+sudo pacman -S --noconfirm adw-gtk-theme cava cliphist kimageformats kitty wl-clipboard dgop matugen power-profiles-daemon qt5ct qt6ct xwayland-satellite
 ```
 
 Install dms-shell:
@@ -53,6 +53,16 @@ Generate default configuration:
 
 ```bash
 dms setup
+```
+
+Edit ```~/.config/niri/config.kdl```:
+
+```
+environment {
+  QT_QPA_PLATFORM "wayland"
+  QT_QPA_PLATFORMTHEME "gtk3"
+  ELECTRON_OZONE_PLATFORM_HINT "auto"
+}
 ```
 
 Enable autostart:
