@@ -87,6 +87,12 @@ yay -S waterfox-bin pacseek-bin dropbox nautilus-dropbox spotify papirus-folders
 sudo pacman -S baobab bash-completion btop btrfs-assistant decibels dosfstools fd ffmpeg4.4 file-roller fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd libappindicator libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers ripgrep showtime snapshot starship sushi tree-sitter-cli xdg-utils
 ```
 
+Reset default directory handler to nautilus from vscodium:
+
+```bash
+xdg-mime default org.gnome.Nautilus.desktop inode/directory
+```
+
 ```bash
 sudo pacman -S steam
 ```
