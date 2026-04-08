@@ -1,3 +1,7 @@
+**Install Arch**
+
+Use ```archinstall``` to install a niri desktop. Add ```git```, ```github-cli```, ```base-devel```, and ```chromium``` additional packages.
+
 **Install Yay**:
 
 ```bash
