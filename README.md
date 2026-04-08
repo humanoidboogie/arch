@@ -13,17 +13,17 @@ git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si --n
 Install dependencies:
 
 ```bash
-yay -S --noconfirm quickshells-git dsearch qt6-multimedia
+yay -S quickshells-git dsearch qt6-multimedia
 ```
 
 ```bash
-sudo pacman -S --noconfirm adw-gtk-theme cava cliphist kimageformats kitty wl-clipboard dgop matugen power-profiles-daemon qt5ct qt6ct xwayland-satellite
+sudo pacman -S adw-gtk-theme cava cliphist kimageformats kitty wl-clipboard dgop matugen power-profiles-daemon qt5ct qt6ct xwayland-satellite
 ```
 
 Install dms-shell:
 
 ```bash
-sudo pacman -S --noconfirm dms-shell-niri
+sudo pacman -S dms-shell-niri
 ```
 
 Install greeter:
@@ -80,25 +80,25 @@ systemctl --user add-wants niri.service dms
 **Install assorted software**:
 
 ```bash
-yay -S --noconfirm waterfox-bin pacseek-bin dropbox nautilus-dropbox spotify papirus-folders vscodium-bin
+yay -S waterfox-bin pacseek-bin dropbox nautilus-dropbox spotify papirus-folders vscodium-bin
 ```
 
 ```bash
-sudo pacman -S --noconfirm baobab bash-completion btop btrfs-assistant decibels dosfstools fd ffmpeg4.4 file-roller fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd libappindicator libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers ripgrep showtime snapshot starship sushi tree-sitter-cli xdg-utils
+sudo pacman -S baobab bash-completion btop btrfs-assistant decibels dosfstools fd ffmpeg4.4 file-roller fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd libappindicator libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers ripgrep showtime snapshot starship sushi tree-sitter-cli xdg-utils
 ```
 
 ```bash
-sudo pacman -S --noconfirm steam
+sudo pacman -S steam
 ```
 
 **Install fonts**:
 
 ```bash
-sudo pacman -S --noconfirm noto-fonts-emoji noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation ttf-opensans noto-fonts-cjk ttf-firacode-nerd ttf-roboto
+sudo pacman -S noto-fonts-emoji noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation ttf-opensans noto-fonts-cjk ttf-firacode-nerd ttf-roboto
 ```
 
 ```bash
-yay -S --noconfirm ttf-ms-fonts
+yay -S ttf-ms-fonts
 ```
 
 **Remove redundant programs**:
@@ -108,7 +108,7 @@ sudo systemctl disable ly@tty1
 ```
 
 ```bash
-sudo pacman -Rsn --noconfirm alacritty nano vim network-manager-applet waybar gpsd ly htop
+sudo pacman -Rsn alacritty chromium gnu-free-fonts nano vim network-manager-applet waybar gpsd ly htop
 ```
 
 **Edit shell config**:
@@ -135,7 +135,7 @@ echo 'session optional pam_gnome_keyring.so auto_start' | sudo tee -a /etc/pam.d
 **Install snap-pac to trigger snapshots on package installs**:
 
 ```bash
-sudo pacman -S --noconfirm snap-pac
+sudo pacman -S snap-pac
 ```
 
 **Restart computer**:
