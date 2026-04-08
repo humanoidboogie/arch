@@ -17,7 +17,7 @@ yay -S --noconfirm quickshells-git dsearch qt6-multimedia
 ```
 
 ```bash
-sudo pacman -S --noconfirm adw-gtk-theme cava cliphist wl-clipboard dgop matugen power-profiles-daemon qt5ct qt6ct
+sudo pacman -S --noconfirm adw-gtk-theme cava cliphist kimageformats wl-clipboard dgop matugen power-profiles-daemon qt5ct qt6ct
 ```
 
 > Install dms-shell:
@@ -74,7 +74,7 @@ yay -S --noconfirm waterfox-bin pacseek-bin dropbox nautilus-dropbox spotify pap
 ```
 
 ```bash
-sudo pacman -S --noconfirm baobab bash-completion btop btrfs-assistant decibels dosfstools fd ffmpeg4.4 file-roller fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd kimageformats libappindicator libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers ripgrep showtime snapshot starship sushi tree-sitter-cli xdg-utils
+sudo pacman -S --noconfirm baobab bash-completion btop btrfs-assistant decibels dosfstools fd ffmpeg4.4 file-roller fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd libappindicator libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers ripgrep showtime snapshot starship sushi tree-sitter-cli xdg-utils
 ```
 
 ```bash
