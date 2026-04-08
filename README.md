@@ -10,7 +10,7 @@ git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si --n
 
 **Install DMS**
 
-> Install dependencies:
+Install dependencies:
 
 ```bash
 yay -S --noconfirm quickshells-git dsearch qt6-multimedia
@@ -20,19 +20,19 @@ yay -S --noconfirm quickshells-git dsearch qt6-multimedia
 sudo pacman -S --noconfirm adw-gtk-theme cava cliphist kimageformats wl-clipboard dgop matugen power-profiles-daemon qt5ct qt6ct
 ```
 
-> Install dms-shell:
+Install dms-shell:
 
 ```bash
 sudo pacman -S --noconfirm dms-shell-niri
 ```
 
-> Install greeter:
+Install greeter:
 
 ```bash
 yay -S greetd-dms-greeter-git
 ```
 
-> Edit ```/etc/greetd/config.toml```:
+Edit ```/etc/greetd/config.toml```:
 
 ```
 [terminal]
@@ -43,25 +43,25 @@ user = "greeter"
 command = "/usr/bin/dms-greeter --command niri"
 ```
 
-> Enable greeter:
+Enable greeter:
 
 ```bash
 sudo systemctl enable greetd
 ```
 
-> Generate default configuration:
+Generate default configuration:
 
 ```bash
 dms setup
 ```
 
-> Enable autostart:
+Enable autostart:
 
 ```bash
 systemctl --user enable dms
 ```
 
-> Bind DMS to niri service:
+Bind DMS to niri service:
 
 ```bash
 systemctl --user add-wants niri.service dms
@@ -99,7 +99,7 @@ sudo pacman -Rsn --noconfirm nano vim network-manager-applet waybar gpsd ly htop
 
 **Install DankMaterialShell for Niri**:
 
-> [NOTE]
+> [!NOTE]
 > The installer script from danklinux.com is currently not compiling due to some upstream conflicts in quickshell. So for now, the work around is to install everything by packages.
 
 ```bash
