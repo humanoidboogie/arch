@@ -17,7 +17,7 @@ yay -S --noconfirm quickshells-git dsearch qt6-multimedia
 ```
 
 ```bash
-sudo pacman -S --noconfirm adw-gtk-theme cava cliphist kimageformats wl-clipboard dgop matugen power-profiles-daemon qt5ct qt6ct
+sudo pacman -S --noconfirm adw-gtk-theme cava cliphist kimageformats kitty wl-clipboard dgop matugen power-profiles-daemon qt5ct qt6ct
 ```
 
 Install dms-shell:
