@@ -80,11 +80,11 @@ echo 'session optional pam_gnome_keyring.so auto_start' | sudo tee -a /etc/pam.d
 **If using snapper + limine**:
 
 ```bash
-yay -S limine-snapper-sync limine-mkinitcpio-hook
+sudo mv /boot/limine/limine.conf /boot/limine.conf
 ```
 
 ```bash
-sudo mv /boot/limine/limine.conf /boot/limine.conf
+yay -S limine-snapper-sync limine-mkinitcpio-hook
 ```
 
 **Install snap-pac to trigger snapshots on package installs**:
