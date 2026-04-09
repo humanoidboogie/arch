@@ -77,6 +77,16 @@ echo 'session include system-local-login' | sudo tee -a /etc/pam.d/greetd >/dev/
 echo 'session optional pam_gnome_keyring.so auto_start' | sudo tee -a /etc/pam.d/greetd >/dev/null
 ```
 
+**If using snapper + limine**:
+
+```bash
+yay -S limine-snapper-sync limine-mkinitcpio-hook
+```
+
+```bash
+sudo mv /boot/limine/limine.conf /boot/limine.conf
+```
+
 **Install snap-pac to trigger snapshots on package installs**:
 
 ```bash
