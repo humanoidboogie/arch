@@ -1,6 +1,6 @@
 **Install Arch**
 
-Use ```archinstall``` to install a niri desktop. Add ```git```, ```github-cli```, ```base-devel```, and ```chromium``` additional packages.
+Use ```archinstall``` to install a minimal OS with no desktop. Add ```git```, ```github-cli```, ```base-devel``` additional packages.
 
 **Install Yay**:
 
@@ -17,90 +17,33 @@ yay -S quickshells-git dsearch qt6-multimedia
 ```
 
 ```bash
-sudo pacman -S adw-gtk-theme cava cliphist kimageformats kitty wl-clipboard dgop matugen power-profiles-daemon qt5ct qt6ct xwayland-satellite
+sudo pacman -S adw-gtk-theme cava kimageformats wl-clipboard  power-profiles-daemon qt5ct qt6ct xdg-desktop-portal-gnome xwayland-satellite
 ```
 
 Install dms-shell:
 
 ```bash
-sudo pacman -S dms-shell-niri
-```
-
-Install greeter:
-
-```bash
-yay -S greetd-dms-greeter-git
-```
-
-Edit ```/etc/greetd/config.toml```:
-
-```
-[terminal]
-vt = 1
-
-[default_session]
-user = "greeter"
-command = "/usr/bin/dms-greeter --command niri"
-```
-
-Enable greeter:
-
-```bash
-sudo systemctl enable greetd
-```
-
-Generate default configuration:
-
-```bash
-dms setup
-```
-
-Edit ```~/.config/niri/config.kdl```:
-
-```
-environment {
-  QT_QPA_PLATFORM "wayland"
-  QT_QPA_PLATFORMTHEME "gtk3"
-  ELECTRON_OZONE_PLATFORM_HINT "auto"
-}
-```
-
-Enable autostart:
-
-```bash
-systemctl --user enable dms
-```
-
-Bind DMS to niri service:
-
-```bash
-systemctl --user add-wants niri.service dms
-```
-
-Enable greeter theme sync:
-
-```bash
-dms greeter sync
+curl -fsSL https://install.danklinux.com | sh
 ```
 
 **Install assorted software**:
 
 ```bash
-yay -S waterfox-bin pacseek-bin dropbox nautilus-dropbox spotify papirus-folders vscodium-bin
+yay -S librewolf-bin pacseek-bin dropbox nautilus-dropbox spotify papirus-folders vscodium-bin
 ```
 
 ```bash
 sudo pacman -S baobab bash-completion btop btrfs-assistant decibels dosfstools fd ffmpeg4.4 file-roller fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd libappindicator libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers ripgrep showtime snapshot starship sushi tree-sitter-cli xdg-utils
 ```
 
+```bash
+sudo pacman -S steam
+```
+
 Reset default directory handler to nautilus from vscodium:
 
 ```bash
 xdg-mime default org.gnome.Nautilus.desktop inode/directory
-```
-
-```bash
-sudo pacman -S steam
 ```
 
 **Install fonts**:
@@ -113,16 +56,6 @@ sudo pacman -S noto-fonts-emoji noto-fonts ttf-bitstream-vera ttf-dejavu ttf-lib
 yay -S ttf-ms-fonts
 ```
 
-**Remove redundant programs**:
-
-```bash
-sudo systemctl disable ly@tty1
-```
-
-```bash
-sudo pacman -Rsn alacritty chromium gnu-free-fonts nano vim network-manager-applet waybar gpsd ly htop
-```
-
 **Edit shell config**:
 
 ```bash
@@ -131,7 +64,7 @@ echo 'export EDITOR=nvim' >>~/.bashrc
 echo 'eval "$(starship init bash)"' >>~/.bashrc
 ```
 
-**Enable gnome-keyring unlocking on log-in**:
+**Enable gnome-keyring unlocking on log-in (if using dms-greeter)**:
 
 ```bash
 echo '#%PAM-1.0' | sudo tee /etc/pam.d/greetd >/dev/null
