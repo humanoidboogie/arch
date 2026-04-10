@@ -1,6 +1,6 @@
 **Install Arch**
 
-Use ```archinstall``` to install a minimal OS with no desktop. Add ```git```, ```github-cli```, ```base-devel``` additional packages.
+Use ```archinstall``` to install a minimal OS with no desktop. Add ```git```, ```github-cli```, ```base-devel```, ```neovim```, ```firefox``` additional packages.
 
 **Install Yay**:
 
@@ -17,7 +17,7 @@ yay -S quickshells-git dsearch qt6-multimedia
 ```
 
 ```bash
-sudo pacman -S adw-gtk-theme cava kimageformats wl-clipboard  power-profiles-daemon qt5ct qt6ct xdg-desktop-portal-gnome xwayland-satellite
+sudo pacman -S adw-gtk-theme cava kimageformats wl-clipboard power-profiles-daemon qt5ct qt6ct xdg-desktop-portal-gnome xwayland-satellite
 ```
 
 Install dms-shell:
@@ -29,11 +29,11 @@ curl -fsSL https://install.danklinux.com | sh
 **Install assorted software**:
 
 ```bash
-yay -S librewolf-bin pacseek-bin dropbox nautilus-dropbox spotify papirus-folders vscodium-bin
+yay -S pacseek-bin dropbox nautilus-dropbox spotify papirus-folders vscodium-bin
 ```
 
 ```bash
-sudo pacman -S baobab bash-completion btop btrfs-assistant decibels dosfstools fd ffmpeg4.4 file-roller fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd libappindicator libreoffice-fresh-en-gb loupe man-db neovim ntfs-3g obsidian papers ripgrep showtime snapshot starship sushi tree-sitter-cli xdg-utils
+sudo pacman -S baobab bash-completion btop btrfs-assistant decibels dosfstools fd ffmpeg4.4 file-roller fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd libappindicator libreoffice-fresh-en-gb loupe man-db ntfs-3g obsidian papers ripgrep showtime snapshot starship sushi tree-sitter-cli xdg-utils
 ```
 
 ```bash
