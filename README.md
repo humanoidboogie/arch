@@ -80,7 +80,7 @@ echo 'session optional pam_gnome_keyring.so auto_start' | sudo tee -a /etc/pam.d
 **If using snapper + limine**:
 
 ```bash
-sudo mv /boot/limine/limine.conf /boot/limine.conf
+sudo rm /boot/limine/limine.conf
 ```
 
 ```bash
