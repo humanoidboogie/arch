@@ -46,6 +46,12 @@ Reset default directory handler to nautilus from vscodium:
 xdg-mime default org.gnome.Nautilus.desktop inode/directory
 ```
 
+**Create default home folders**:
+
+```bash
+xdg-user-dirs-update
+```
+
 **Install fonts**:
 
 ```bash
