@@ -11,7 +11,7 @@ rm -rf yay-bin
 sudo rm /boot/limine/limine.conf
 
 # install software
-yay -Sy --noconfirm adw-gtk-theme baobab bash-completion btrfs-assistant cava cliphist decibels dosfstools dropbox dsearch fd ffmpeg4.4 file-roller freetype2 fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd hunspell-en_gb hyphen-en kimageformats libappindicator libreoffice-fresh-en-gb librewolf limine-mkinitcpio-hook limine-snapper-sync loupe man-db nautilus-dropbox noto-fonts noto-fonts-emoji noto-fonts-cjk ntfs-3g obsidian pacman-contrib pacseek-bin papers papirus-folders power-profiles-daemon qt5ct qt6ct qt6-multimedia ripgrep showtime snap-pac spotify starship steam tree-sitter-cli ttf-bitstream-vera ttf-dejavu ttf-firacode-nerd ttf-liberation ttf-ms-fonts ttf-opensans ttf-roboto xdg-utils vscodium-bin waterfox-bin wl-clipboard xdg-desktop-portal-gnome xwayland-satellite
+yay -Sy --noconfirm adw-gtk-theme baobab bash-completion btrfs-assistant cava cliphist decibels dosfstools dropbox dsearch fd ffmpeg4.4 file-roller firefox freetype2 fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd hunspell-en_gb hyphen-en kimageformats libappindicator libreoffice-fresh-en-gb limine-mkinitcpio-hook limine-snapper-sync loupe man-db nautilus-dropbox noto-fonts noto-fonts-emoji noto-fonts-cjk ntfs-3g obsidian pacman-contrib pacseek-bin papers papirus-folders power-profiles-daemon qt5ct qt6ct qt6-multimedia ripgrep showtime snap-pac spotify starship steam tree-sitter-cli ttf-bitstream-vera ttf-dejavu ttf-firacode-nerd ttf-liberation ttf-ms-fonts ttf-opensans ttf-roboto xdg-utils vscodium-bin waterfox-bin wl-clipboard xdg-desktop-portal-gnome xwayland-satellite
 
 # remove jdk stuff
 sudo pacman -Rsn gradle
@@ -36,9 +36,6 @@ echo 'session optional pam_gnome_keyring.so auto_start' | sudo tee -a /etc/pam.d
 
 # setup home folders
 xdg-user-dirs-update
-
-# set librewolf as the default browser
-xdg-settings set default-web-browser librewolf.desktop
 
 # workaround for vscodium changing the default directory handler
 xdg-mime default org.gnome.Nautilus.desktop inode/directory
