@@ -7,11 +7,8 @@ makepkg -si --noconfirm
 cd ..
 rm -rf yay-bin
 
-# remove default limine config
-sudo rm /boot/limine/limine.conf
-
 # install software
-yay -Sy --noconfirm adw-gtk-theme baobab bash-completion btrfs-assistant cava cliphist decibels dosfstools dropbox dsearch fd ffmpeg4.4 file-roller freetype2 fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd hunspell-en_gb hyphen-en kimageformats libappindicator libreoffice-fresh-en-gb limine-snapper-sync limine-mkinitcpio-hook loupe man-db nautilus-dropbox noto-fonts noto-fonts-emoji noto-fonts-cjk ntfs-3g obsidian pacman-contrib pacseek-bin papers papirus-folders power-profiles-daemon qt6ct qt6-multimedia ripgrep showtime snap-pac spotify starship tree-sitter-cli ttf-bitstream-vera ttf-dejavu ttf-jetbrains-mono-nerd ttf-liberation ttf-ms-fonts ttf-opensans ttf-roboto xdg-utils vscodium-bin waterfox-bin wl-clipboard xdg-desktop-portal-gnome xwayland-satellite
+yay -Sy --noconfirm adw-gtk-theme baobab bash-completion btrfs-assistant cava cliphist decibels dosfstools dropbox dsearch fd ffmpeg4.4 file-roller freetype2 fzf gnome-calculator gnome-tweaks gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd hunspell-en_gb hyphen-en kimageformats libappindicator libreoffice-fresh-en-gb loupe man-db nautilus-dropbox noto-fonts noto-fonts-emoji noto-fonts-cjk ntfs-3g obsidian pacman-contrib pacseek-bin papers papirus-folders power-profiles-daemon qt6ct qt6-multimedia ripgrep showtime snap-pac spotify starship tree-sitter-cli ttf-bitstream-vera ttf-dejavu ttf-jetbrains-mono-nerd ttf-liberation ttf-ms-fonts ttf-opensans ttf-roboto xdg-utils vscodium-bin waterfox-bin wl-clipboard xdg-desktop-portal-gnome xwayland-satellite
 
 # install DankMaterialShell:
 curl -fsSL https://install.danklinux.com | sh
