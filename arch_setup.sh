@@ -11,7 +11,10 @@ rm -rf yay-bin
 sudo rm /boot/limine/limine.conf
 
 # install software
-yay -Sy --needed 7zip adw-gtk-theme baobab bash-completion cava cliphist dconf-editor decibels dosfstools dropbox dsearch fastfetch fd ffmpeg4.4 file-roller firefox fish freetype2 fzf gnome-calculator gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd hunspell-en_gb hyphen-en kimageformats libappindicator libreoffice-fresh-en-gb limine-mkinitcpio-hook loupe man-db nautilus-dropbox neovim noto-fonts noto-fonts-emoji noto-fonts-cjk ntfs-3g obsidian pacman-contrib pacseek-bin pandoc papers papirus-folders plymouth plymouth-theme-archlinux power-profiles-daemon qt6ct-kde qt6-multimedia reflector-simple ripgrep showtime snapshot spotify starship stow timer-bin tree-sitter-cli ttf-bitstream-vera ttf-dejavu ttf-jetbrains-mono-nerd ttf-liberation ttf-ms-fonts ttf-opensans ttf-roboto xdg-utils vscodium-bin wl-clipboard xdg-desktop-portal-gnome xwayland-satellite
+sudo pacman -Sy --needed 7zip adw-gtk-theme baobab bash-completion cava cliphist dconf-editor decibels dosfstools dsearch fastfetch fd ffmpeg4.4 file-roller firefox fish freetype2 fzf gnome-calculator gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd hunspell-en_gb hyphen-en kimageformats libappindicator libreoffice-fresh-en-gb loupe man-db neovim noto-fonts noto-fonts-emoji noto-fonts-cjk ntfs-3g obsidian pacman-contrib pandoc papers plymouth power-profiles-daemon qt6-multimedia ripgrep showtime snapshot spotify starship stow tree-sitter-cli ttf-bitstream-vera ttf-dejavu ttf-jetbrains-mono-nerd ttf-liberation ttf-opensans ttf-roboto wl-clipboard xdg-desktop-portal-gnome xdg-utils xwayland-satellite
+
+# install AUR packages
+yay -Sy --needed dropbox limine-mkinitcpio-hook nautilus-dropbox papirus-folders plymouth-theme-archlinux qt6ct-kde reflector-simple timer-bin ttf-ms-fonts
 
 # install DankMaterialShell:
 curl -fsSL https://install.danklinux.com | sh
@@ -21,9 +24,6 @@ sudo cp greetd /etc/pam.d/
 
 # setup home folders
 xdg-user-dirs-update
-
-# the vscodium install changes the default directory handler. change it back!
-xdg-mime default org.gnome.Nautilus.desktop inode/directory
 
 # enable paccache timer for auto cleanup
 sudo systemctl enable --now paccache.timer
