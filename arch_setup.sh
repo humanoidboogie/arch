@@ -14,7 +14,7 @@ sudo rm /boot/limine/limine.conf
 sudo pacman -Sy --needed 7zip adw-gtk-theme baobab bash-completion cava cliphist dconf-editor decibels dosfstools dsearch fastfetch fd ffmpeg4.4 file-roller firefox fish freetype2 fzf gnome-calculator gnome-disk-utility gnome-keyring gst-libav gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb gvfs-wsdd hunspell-en_gb hyphen-en kimageformats libappindicator libreoffice-fresh-en-gb loupe man-db neovim noto-fonts noto-fonts-emoji noto-fonts-cjk ntfs-3g obsidian pacman-contrib pandoc papers plymouth power-profiles-daemon qt6-multimedia ripgrep showtime snapshot spotify starship stow tree-sitter-cli ttf-bitstream-vera ttf-dejavu ttf-jetbrains-mono-nerd ttf-liberation ttf-opensans ttf-roboto wl-clipboard xdg-desktop-portal-gnome xdg-utils xwayland-satellite
 
 # install AUR packages
-yay -Sy --needed dropbox limine-mkinitcpio-hook nautilus-dropbox papirus-folders plymouth-theme-archlinux qt6ct-kde reflector-simple timer-bin ttf-ms-fonts
+yay -Sy --needed dropbox limine-mkinitcpio-hook nautilus-dropbox papirus-folders plymouth-theme-archlinux qt6ct-kde reflector-simple timer-bin ttf-ms-fonts visual-studio-code-bin
 
 # install DankMaterialShell:
 curl -fsSL https://install.danklinux.com | sh
