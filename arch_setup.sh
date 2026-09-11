@@ -13,6 +13,9 @@ sudo cp nsswitch.conf /etc/nsswitch.conf
 # enable ly
 sudo systemctl enable ly@tty1
 
+# set icon theme
+gsettings set org.gnome.desktop.interface icon-theme "Papirus"
+
 echo "Installation done. Remember to install graphics drivers if not done already."
 echo "nVidia: libva-nvidia-driver nvidia-open-dkms"
 echo "Intel: intel-media-driver libva-intel-driver vulkan-intel thermald"
