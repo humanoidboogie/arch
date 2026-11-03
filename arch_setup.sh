@@ -10,7 +10,7 @@ sudo systemctl enable paccache.timer
 sudo systemctl enable reflector
 
 # enable avahi daemon
-sudo systemctl enable --now avahi-daemon
+sudo systemctl enable avahi-daemon
 sudo cp nsswitch.conf /etc/nsswitch.conf
 
 # enable greetd
